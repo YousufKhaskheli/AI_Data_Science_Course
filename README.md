@@ -1,6 +1,6 @@
 ﻿# AI & Data Science Coursework
 
-**Institution:** TAJ Titan (Taj Institute of Technology & Applied Networks) - Affiliated with SMIT
+**Institution:** TITAN (Taj Institute of Technology & Applied Networks) - Affiliated with SMIT
 
 ### Description
 Repository for course materials, assignments, notebooks, and resources from AI & Data Science classes at TAJ Titan. This repo collects lecture notes, code examples, datasets, and project work created during the course. This log documents my progression.
