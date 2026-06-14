@@ -1,0 +1,7 @@
+# Ignore the local virtual environment folder
+Venv/
+
+# Ignore Python runtime caches
+**/__pycache__/
+*.pyc
+.Venv/
