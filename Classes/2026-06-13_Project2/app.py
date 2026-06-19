@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Path, HTTPException, Query
+from fastapi import FastAPI, Path, HTTPException, Query, Response
 import json
 import pandas as pd
 import openpyxl
@@ -12,8 +12,8 @@ def load_data():
 
 
 def load_data2():
-  df = pd.read_excel("employee.xlsx")
-  return df
+    df = pd.read_excel("employee.xlsx")
+    return df.convert_dtypes()
     
     
 @app.get("/")
@@ -35,8 +35,7 @@ def get_student(roll:str =Path(...,description='Student Roll Number',example="12
 
 @app.get('/sort')
 def sort_students(sort_by: str = Query(...,   description='Sort on the basis of Python, Pandas or Numpy'), 
-                  order: str =   Query('asc', description='sort in asc or desc order')
-                  ):
+                order: str =   Query('desc', description='sort in asc or desc order')):
 
     valid_fields = ['Python', 'Pandas', 'Numpy']
 
@@ -56,5 +55,5 @@ def sort_students(sort_by: str = Query(...,   description='Sort on the basis of 
 
 @app.get("/dataframe")
 def show_employees():
-  employees = load_data2()
-  return employees
+    employees_df = load_data2()
+    return employees_df.to_dict(orient="records")

@@ -3,8 +3,8 @@ from fastapi import FastAPI
 app = FastAPI()
 
 data = [{'roll':120,'name':'Asad','course':'python'},
-        {'roll':122,'name':'Farman','course':'Data Science'},
-        {'roll':128,'name':'Shan','course':'AI'}]
+        {'roll':122,'name':'Younus','course':'Data Science'},
+        {'roll':128,'name':'Yousuf','course':'AI'}]
 
 
 @app.get("/")
