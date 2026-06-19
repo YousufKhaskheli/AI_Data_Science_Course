@@ -9,8 +9,8 @@ Repository for course materials, assignments, notebooks, and resources from AI &
 * **Classes/** — Unified chronological directory for all lecture materials, exercises, and multi-file projects.
   * *Notebooks:* Classroom notebooks.
   * *Projects:* Working with virtual environments and FastAPI using Visual Studio Code.
-* **docs/** — Project documentation, references, and textbooks.
-* *assignments* — assignment files and solutions
+* **Docs/** — Project documentation, references, and textbooks.
+* *Assignments* — assignment files and solutions
 
 ### Naming Conventions
 - Notebooks: YYYY-MM-DD_topic.ipynb
