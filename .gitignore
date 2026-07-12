@@ -5,3 +5,6 @@ Venv/
 **/__pycache__/
 *.pyc
 .Venv/
+
+#ignore .ipynb checkpoints
+.ipynb_checkpoints
