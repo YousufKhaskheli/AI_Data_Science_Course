@@ -10,7 +10,7 @@ Repository for course materials, assignments, notebooks, and resources from AI &
   * *Notebooks:* Classroom notebooks.
   * *Projects:* Working with virtual environments and FastAPI using Visual Studio Code.
 * **Docs/** — Project documentation, references, and textbooks.
-* *Assignments* — assignment files and solutions
+* **Assignments/** — assignment files and solutions
 
 ### Naming Conventions
 - Notebooks: YYYY-MM-DD_topic.ipynb
