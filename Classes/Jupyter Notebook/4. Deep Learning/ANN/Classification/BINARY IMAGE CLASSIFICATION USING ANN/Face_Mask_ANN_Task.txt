@@ -1,0 +1,53 @@
+# ASSIGNMENT: BINARY IMAGE CLASSIFICATION USING ANN
+
+## Task
+
+You are required to build an **ANN model** for **binary image classification** using the Face Mask dataset.
+
+The model should classify a new image as:
+
+- **With Mask**
+- **Without Mask**
+
+## Dataset
+
+**Face Mask Dataset — With Mask / Without Mask**
+
+**Kaggle Dataset:** https://www.kaggle.com/datasets/belsonraja/face-mask-dataset-with-and-without-mask
+
+## Requirements
+
+1. Download the dataset from Kaggle.
+2. Load the dataset in **Google Colab**.
+3. Use `splitfolders` to split the data:
+   - **70% Train**
+   - **20% Validation**
+   - **10% Test**
+4. Perform image preprocessing and normalization.
+5. Build an **ANN model** for binary classification.
+6. Train the model using the training data.
+7. Use validation data during training.
+8. Evaluate the model on test data.
+9. Show **training/validation accuracy and loss graphs**.
+10. Give a **new image** to the trained model and display the prediction:
+   - **With Mask**
+   - **Without Mask**
+
+## Dataset Split Code
+
+```python
+!pip install split-folders
+```
+
+```python
+import splitfolders
+
+input_folder = "dataset"
+
+splitfolders.ratio(
+    input_folder,
+    output="output_dataset",
+    seed=42,
+    ratio=(0.7, 0.2, 0.1)
+)
+```
