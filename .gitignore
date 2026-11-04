@@ -5,6 +5,16 @@ Venv/
 **/__pycache__/
 *.pyc
 .Venv/
+.venv/
+venv
+Venv
 
 #ignore .ipynb checkpoints
 .ipynb_checkpoints
+
+
+*.pt
+*.zip
+runs/
+*.avi
+*.mp4
